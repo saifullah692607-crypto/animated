@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(./557ed127938f47408c2d3f995214db6a.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px black;
+    padding: 15px 10%;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 0 20px wheat;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link li {
+    display: inline-block;
+}
+
+.nav-link li a {
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: black;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s;
+}
+
+.nav-link li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: width 0.4s ease-in-out;
+}
+
+.nav-link li a:hover {
+    color: white;
+}
+.nav-link li a:hover::after {
+    width: 100%;
+}
+
+/* 2 buttons in one line */
+.nav-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.login-btn, .signin-btn {
+    padding: 8px 22px;
+    border-radius: 20px;
+    border: 1px solid white;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+
+.login-btn {
+    background: transparent;
+    color: white;
+}
+.signin-btn {
+    background: white;
+    color: black;
+    font-weight: 600;
+    border: none;
+}
+
+/* card section */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px 10%;
+    flex-wrap: wrap;
+   
+}
+
+.card-section {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.card-section:hover {
+    transform: translateY(-10px) scale(1.03);
+}
+
+.card-section img {
+    width: 250px;
+    height: 440px;
+    object-fit: cover;
+    display: block;
+}
+
+/* footer - float left fixed */
+.footer-page {
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: blur(10px);
+    padding: 40px 10%;
+    margin-top: 40px;
+}
+
+.footer-bio {
+    float: left;
+}
+h1{
+    font-size: 20px;
+}
+.footer-bio h1 {
+    color: white;
+    text-transform: uppercase;
+}
+
+.icon {
+    margin-top: 10px;
+    display: flex;
+    gap: 18px;
+}
+
+.icon i {
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icon i:hover {
+    color: wheat;
+    transform: translateY(-3px);
+}
+
+/* YOUR QUESTION - float to left side */
+.list {
+    float: right; /* right side pe hai, left karna hai to float: left karo */
+    margin-top: 20px;
+}
+
+.list a {
+    float: left;
+    margin-left: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    position: relative;
+    padding-bottom: 3px;
+}
+
+.list a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background: wheat;
+    transition: 0.4s;
+}
+
+.list a:hover::after {
+    width: 100%;
+}
